@@ -86,7 +86,6 @@ models.append(('LR', LogisticRegression(multi_class='multinomial'))) #для м�
 models.append(('KNN', KNeighborsClassifier(n_neighbors=10)))
 models.append(('CART', DecisionTreeClassifier(max_depth =100, criterion='gini', splitter='best')))
 models.append(('RF', RandomForestClassifier(max_depth =100, criterion='gini')))
-#models.append(('SVC', LinearSVC(max_iter)))
 
 names = []
 results=[]
@@ -101,7 +100,7 @@ for name, model in models:
 # In[11]:
 
 
-sns.set_style(style="dark") #'darkgrid' darkgrid, whitegrid, dark, white, ticks
+sns.set_style(style="dark") 
 
 x = names
 y = results
